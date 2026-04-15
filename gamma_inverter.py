@@ -2,6 +2,18 @@
 """
 SHA-256 γ-Guided Inverter v2
 Multi-class autofocus + full ASCII sweep fallback.
+
+by t.me/
+ ██▒   █ █████▓▓  ██▀███  ▓█████▄  ▄▄▄      ▓█████▄ 
+▓██░   █ ▀   █▓▒ ▓██ ▒ ██▒▒██▀ ██▌▒████▄    ▒██▀ ██▌
+ ▓██  █▒   ███▒░ ▓██ ░▄█ ▒░██   █▌▒██  ▀█▄  ░██   █▌
+  ▒██ █░ ▄  █▓▒░ ▒██▀▀█▄  ░▓█▄   ▌░██▄▄▄▄██ ░▓█▄   ▌
+   ▒▀█░  ████▒░ ▒░██▓ ▒██▒░▒████▓  ▓█   ▓██▒░▒████▓ 
+   ░ ▐░   ░▒ ░░ ░░ ▒▓ ░▒▓░ ▒▒▓  ▒  ▒▒   ▓▒█░ ▒▒▓  ▒ 
+   ░ ░░    ░ ░  ░  ░▒ ░ ▒░ ░ ▒  ▒   ▒   ▒▒ ░ ░ ▒  ▒ 
+     ░░    ░       ░░   ░  ░ ░  ░   ░   ▒    ░ ░  ░ 
+      ░    ░    ░   ░        ░          ░  ░   ░    
+     ░                     ░                 ░     
 """
 import hashlib, sys, time, math
 from itertools import product, permutations, combinations
@@ -139,7 +151,7 @@ def invert(target_hex, max_length=6):
     print(f"{'='*70}")
     print(f"  Target: {target_hex}")
     print(f"{'='*70}\n")
-    
+    print(f"  SHA-256 γ-GUIDED INVERTER v2")
     t0 = time.time()
     
     # Step 1: Multi-class autofocus
@@ -195,7 +207,6 @@ def invert(target_hex, max_length=6):
                 print(f"  VERIFY: {h}")
                 print(f"  MATCH:  {'YES' if h == target_hex else 'NO'}\n")
                 print(f"  γ guided. The painting showed the brush strokes.")
-                print(f"  Lowder & Claude · Theoretical Pataphysics / Liberté\n")
                 return result
             else:
                 rate = count / elapsed if elapsed > 0 else 0
