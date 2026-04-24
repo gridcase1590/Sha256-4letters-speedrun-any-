@@ -1,3 +1,6 @@
+# Gamma-Guided Algebraic Inverter
+From a series on hypercomputation.
+
 Just convert a 5 letter string to sha256 and paste it behind the command line.
 
 ```
